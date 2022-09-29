@@ -5,15 +5,27 @@
     <img id="saturn"  style="width:1000xpx" src="saturn.360.jpg">
     <img id="saturnTexture" src="https://img.gs/bbdkhfbzkk/stretch/http://orig13.deviantart.net/b322/f/2014/306/2/4/saturn_texture__3_2k____storm_by_hellcatf6f-d84xlbn.png" crossorigin="anonymous" />
     <img id="marsTexture" src="https://img.gs/bbdkhfbzkk/stretch/http://solarviews.com/raw/venus/venmap.gif" crossorigin="anonymous" />
-    <img id="uranusTexture" src="https://img.gs/bbdkhfbzkk/stretch/https://d2t1xqejof9utc.cloudfront.net/screenshots/pics/b9a986a8f99e18c42965242ca4374d9e/original.png" crossorigin="anonymous" />  <img id="uranusTexture" src="https://img.gs/bbdkhfbzkk/stretch/https://csdrive.srru.ac.th/55122420113/texture/neptune.png" crossorigin="anonymous" />
+    <img id="uranusTexture" src="https://img.gs/bbdkhfbzkk/stretch/https://d2t1xqejof9utc.cloudfront.net/screenshots/pics/b9a986a8f99e18c42965242ca4374d9e/original.png" crossorigin="anonymous" />  
+    <img id="uranusTexture" src="https://img.gs/bbdkhfbzkk/stretch/https://csdrive.srru.ac.th/55122420113/texture/neptune.png" crossorigin="anonymous" />
     <img  id="saturnRings" src="2k_saturn.jpg">    
     <img id="jupiterTexture" src="https://img.gs/bbdkhfbzkk/stretch/http://orsa.sourceforge.net/textures/jupiter-1k.png" crossorigin="anonymous" />
+    <img id="sunTexture" src="sun.png"/>
+    <img id="mercuryTexture" src="mercury.png"/>
+    <img id="venusTexture" src="venus.png"/>
 </head>
   <body>
     <a-scene>
     <a-sky id="image-360" radius="10" src="#city"></a-sky>
+      <a-sphere position="-30 7.25 -5" radius="10.25" color="#f5f5dc" src="#sunTexture">
+        <a-animation attribute="rotation" dur="5000" easing="linear" to="0 360 0" repeat="indefinite"></a-animation></a-sphere>
 
-      <a-sphere position="0 1.25 -5" radius="2.25"   src="#saturnTexture">
+      <a-sphere position="-25 6.25 -5" radius="0.75" color="#f5f5dc" src="#mercuryTexture">
+        <a-animation attribute="rotation" dur="4500" easing="linear" to="0 360 0" repeat="indefinite"></a-animation></a-sphere>
+
+      <a-sphere position="-10 5.25 -5" radius="1.75" color="#f5f5dc" src="#venusTexure">
+        <a-animation attribute="rotation" dur="35000" easing="linear" to="0 360 0" repeat="indefinite"></a-animation></a-sphere>
+
+      <a-sphere position="0 1.25 -5" radius="2.25" src="#saturnTexture">
         <a-animation attribute="rotation" dur="1100" easing="linear" to="0 360 0" repeat="indefinite"></a-animation>
       </a-sphere>
       <a-sphere position="-4 3.25 -5" radius="0.35" color="#f5f5dc"src="#marsTexture">
